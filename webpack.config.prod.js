@@ -21,7 +21,7 @@ module.exports = function (env, argv) {
       new CleanWebpackPlugin(['dist']),
       new HtmlWebpackPlugin({
         title: 'Testovoe',
-        template: path.resolve('./src/testovoe.pug')
+        template: path.resolve('./src/test.pug')
       }),
       new MiniCssExtractPlugin({
         filename: "[name].css",

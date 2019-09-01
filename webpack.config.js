@@ -28,7 +28,7 @@ module.exports = function(){
     plugins: [
       new HtmlWebpackPlugin({
         title: 'Testovoe',
-        template: path.resolve('./src/testovoe.pug')
+        template: path.resolve('./src/test.pug')
       }),
       new webpack.HotModuleReplacementPlugin()
     ],

@@ -1,0 +1,12 @@
+$head-border: 1px solid rgba(255, 255, 255, 0.22);
+@mixin head-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: $head-border;
+  z-index: 1000;
+}
+@mixin navigate {
+  display: flex;
+  justify-content: space-around;
+}
