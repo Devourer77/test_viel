@@ -27,7 +27,7 @@ module.exports = function(){
     },
     plugins: [
       new HtmlWebpackPlugin({
-        title: 'Testovoe',
+        title: 'Test',
         template: path.resolve('./src/test.pug')
       }),
       new webpack.HotModuleReplacementPlugin()
@@ -35,19 +35,19 @@ module.exports = function(){
     module: {
       rules: [
         {
-          test: /\.scss$/,
-          use: [
-            'style-loader',
-            "css-loader",
-            "sass-loader",
-          ]
-        },
-        {
           test: /\.css$/,
           use: [
             'style-loader',
             { loader: 'css-loader', options: { importLoaders: 1 } },
             'postcss-loader'
+          ]
+        },
+        {
+          test: /\.scss$/,
+          use: [
+            'style-loader',
+            'css-loader',
+            'sass-loader',
           ]
         },
         {
