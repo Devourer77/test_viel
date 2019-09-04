@@ -43,6 +43,14 @@ module.exports = function(){
           ]
         },
         {
+          test: /\.css$/,
+          use: [
+            'style-loader',
+            { loader: 'css-loader', options: { importLoaders: 1 } },
+            'postcss-loader'
+          ]
+        },
+        {
           test: /\.m?js$/,
           exclude: /(node_modules|bower_components)/,
           use: {
@@ -103,6 +111,18 @@ module.exports = function(){
           options: {
             pretty: true
           }
+        },
+        {
+          test: require.resolve('jquery'),
+          use: [{
+            loader: 'expose-loader',
+            options: 'jQuery'
+          },
+            {
+              loader: 'expose-loader',
+              options: '$'
+            }
+          ]
         },
       ]
     }
