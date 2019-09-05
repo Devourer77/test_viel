@@ -9,10 +9,17 @@
   background: url("../images/main.png") no-repeat;
   height: 1082px;
   width: 100%;
+  max-width: 1920px;
   z-index: 10;
   position: absolute;
+}
+.lSSlideOuter {
+  position: relative;
   top: -120px;
 }
+//#lightSlider {
+//  height: 1082px;
+//}
 .logo {
   @include head-center;
   background: url("../images/IBANKER.png") 50% 35% no-repeat, url("../images/Investment.png") 50% 65% no-repeat;
@@ -45,7 +52,7 @@
 }
 .slide-block {
   position: absolute;
-  top: 239px;
+  top: 120px;
   width: 634px;
 }
 .slide-block-title {
@@ -94,7 +101,7 @@
   justify-content: space-between;
   max-width: 1920px;
   height: 109px;
-  top: 850px;
+  top: 974px;
   z-index: 1000;
   background: rgba(26, 12, 12, 0.64);
 
